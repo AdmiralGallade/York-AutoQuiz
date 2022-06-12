@@ -32,9 +32,13 @@ User_Input.send_keys(username)
 
 driver.switch_to.alert.dismiss()
 
-WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.ID, "password"))).click()
+# WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.ID, "password"))).click()
 Pwd_Input=driver.find_element_by_id(password)
 Pwd_Input.send_keys("passwor1d")
+
+Login_Button=driver.find_element_by_xpath("//*[@type='submit']")
+Login_Button.click()
+
 
 
 
