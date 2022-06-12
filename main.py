@@ -1,10 +1,14 @@
-import pytest
-from selenium.webdriver import Chrome
+
+import selenium
+from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
-@pytest.fixture
-def browser():
-  driver = Chrome()
-  driver.implicitly_wait(10)
-  yield driver
-  driver.quit()
+#stopped at 0N__
+driver = webdriver.Chrome()
+
+driver.get('https://eclass.yorku.ca/eclass/')
+
+
+
+
+
